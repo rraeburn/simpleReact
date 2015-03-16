@@ -47,9 +47,6 @@ var Villain = React.createClass({
 var VillainList = React.createClass({
   render: function() {
     var villains = this.props.data.map(function(villain) {
-      if(villain.editing) {
-        return <EditVillain data={villain} key={villain._id} />
-      }
       return <Villain data={villain} key={villain._id} />
     });
     return (
