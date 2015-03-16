@@ -44,27 +44,6 @@ var Villain = React.createClass({
   }
 });
 
-var EditingVillain = React.createClass({
-  getInitialState: function() {
-    return {newSuperName: this.props.superName};
-  },
-  handleChange: function(event) {
-    this.setState({newSuperName: event.target.value});
-  },
-  render: function() {
-    return (
-      <li>
-        <form>
-          <label htmlFor={"editVillain" + this.props.data._id}>Edit Villain</label>
-          <input type="text" id={"editVillain" + this.props.data._id} onChange={this.handleChange} value={newSuperName} />
-          <button type="submit">Save Villain</button>
-          <button onClick={this.cancel}>Cancel</button>
-        </form>
-      </li>
-    )
-  }
-})
-
 var VillainList = React.createClass({
   render: function() {
     var villains = this.props.data.map(function(villain) {
