@@ -1,0 +1,10 @@
+'use strict';
+
+var constants = {
+  ADD_VILLAIN: 'ADD_VILLAIN',
+  TOGGLE_EDIT_VILLAIN: 'TOGGLE_EDIT_VILLAIN',
+  UPDATE_VILLAIN: 'UPDATE_VILLAIN',
+  REMOVE_VILLAIN: 'REMOVE_VILLAIN'
+};
+
+module.exports = constants;
